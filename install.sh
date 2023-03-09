@@ -46,7 +46,7 @@ os.system('wget https://raw.githubusercontent.com/Stability-AI/stablediffusion/m
 os.system('wget https://raw.githubusercontent.com/Stability-AI/stablediffusion/main/configs/stable-diffusion/v2-inpainting-inference.yaml -P ./' + CONFIG)
 
 os.system('cp ./' + CONFIG + '/v2-inference-v.yaml ./stable-diffusion-webui/models/Stable-diffusion/v2-1_768-nonema-pruned.yaml')
-os.system('cp ./' + CONFIG + '/v2-inference-v.yaml ./stable-diffusion-webui/models/Stable-diffusion/512-base-ema.yaml')
+os.system('cp ./' + CONFIG + '/v2-inference.yaml ./stable-diffusion-webui/models/Stable-diffusion/512-base-ema.yaml')
 os.system('cp ./' + CONFIG + '/x4-upscaling.yaml ./stable-diffusion-webui/models/Stable-diffusion/x4-upscaler-ema.yaml')
 
 
