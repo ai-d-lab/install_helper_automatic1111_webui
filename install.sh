@@ -56,7 +56,7 @@ for i in link_array:
     print(i[0])    
     print(i[1])
     print(" ")
-    return_val = hf_hub_download(repo_id=i[0], filename=i[1], cache_dir="./"+DIR)
+    return_val = hf_hub_download(repo_id=i[0], filename=i[1])
     os.system('cp '+ return_val +' ./stable-diffusion-webui/models/Stable-diffusion/'+i[1])  
     print("Modell "+ i[1] +" wird in den Ordner /stable-diffusion-webui/models/Stable-diffusion/ kopiert.")
     print(" ")
